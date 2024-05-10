@@ -59,7 +59,7 @@ public class StudentController {
         studentFacade.deleteStudent(id);
     }
 
-    @PutMapping
+    @PostMapping
     public ShortStudentDto saveStudent(CreateStudentDto dto) {
         return  groupStudentFacade.saveStudent(dto);
     }
